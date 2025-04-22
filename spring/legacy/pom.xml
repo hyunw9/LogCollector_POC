@@ -49,6 +49,53 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-spring-legacy</artifactId>
+      <version>0.6.3.RELEASE</version>  <!-- 2017년 7월 릴리스 -->
+    </dependency>
+
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-registry-prometheus-simpleclient</artifactId>
+      <version>1.13.0</version>
+    </dependency>
+
+
+    <!-- Prometheus core client -->
+    <dependency>
+      <groupId>io.prometheus</groupId>
+      <artifactId>simpleclient</artifactId>
+      <version>0.16.0</version>
+    </dependency>
+
+    <!-- Prometheus core metrics (Counters, Gauges, etc) -->
+    <dependency>
+      <groupId>io.prometheus</groupId>
+      <artifactId>simpleclient_common</artifactId>
+      <version>0.16.0</version>
+    </dependency>
+
+    <!-- JVM 메트릭 (메모리, GC, 쓰레드 등) -->
+    <dependency>
+      <groupId>io.prometheus</groupId>
+      <artifactId>simpleclient_hotspot</artifactId>
+      <version>0.16.0</version>
+    </dependency>
+
+<!--    <dependency>-->
+<!--      <groupId>io.micrometer</groupId>-->
+<!--      <artifactId>micrometer-core</artifactId>-->
+<!--      <version>1.1.4</version>-->
+<!--      <scope>compile</scope>-->
+<!--    </dependency>-->
+
+<!--    <dependency>-->
+<!--      <groupId>io.micrometer</groupId>-->
+<!--      <artifactId>micrometer-registry-prometheus</artifactId>-->
+<!--      <version>1.3.20</version>-->
+<!--    </dependency>-->
   </dependencies>
 
   <build>
